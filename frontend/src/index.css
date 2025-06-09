@@ -73,9 +73,7 @@ code {
   @apply fill-gray-300;
 }
 
-.react-flow__minimap {
-  @apply bg-gray-900/80 border border-gray-700 shadow-lg;
-}
+
 
 .react-flow__panel {
   @apply bg-gray-900/80 text-gray-300 border border-gray-700 rounded-lg shadow;

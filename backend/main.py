@@ -30,6 +30,7 @@ class Edge(BaseModel):
 class Pipeline(BaseModel):
     nodes: List[Node]
     edges: List[Edge]
+    
 
 def is_dag(nodes: List[dict], edges: List[dict]) -> bool:
     graph = defaultdict(list)

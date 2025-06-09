@@ -65,7 +65,7 @@ export const PipelineUI = () => {
         const appData = JSON.parse(event.dataTransfer.getData('application/reactflow'));
         const type = appData?.nodeType;
   
-        // check if the dropped element is valid
+       
         if (typeof type === 'undefined' || !type) {
           return;
         }
@@ -129,7 +129,6 @@ export const PipelineUI = () => {
             variant="dots"
           />
         <Controls
- // Replace the className with:
 className="bg-gray-900/80 backdrop-blur-sm border border-gray-700 rounded-xl shadow-lg shadow-blue-900/10 hover:shadow-blue-900/20 transition-all p-1"
   position="top-right"
 

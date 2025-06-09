@@ -52,27 +52,16 @@ export const SubmitButton = () => {
       padding: '20px',
       marginTop: '10px'
     }}>
-      <button 
+    
+       <button
         onClick={handleSubmit}
-        style={{
-          padding: '12px 24px',
-          background: '#3b82f6',
-          color: 'white',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          fontSize: '16px',
-          fontWeight: '600',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-          transition: 'all 0.2s',
-          ':hover': {
-            background: '#2563eb',
-            transform: 'translateY(-1px)'
-          }
-        }}
-      >
-        Analyze Pipeline
-      </button>
+        className="relative w-[200px] h-[50px] flex items-center justify-center rounded-lg overflow-hidden transition duration-200">
+  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+  <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+    Analyze Pipeline
+  </div>
+</button>
+     
     </div>
   );
 };

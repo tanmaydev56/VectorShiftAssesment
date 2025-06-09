@@ -7,6 +7,7 @@ const TextNode = ({ id, data }) => {
   return (
     <BaseNode
       title="Text"
+      inputs={[{ id: `${id}-input`, position: 'left' }]}
       outputs={[{ id: `${id}-output`, position: 'right' }]}
     >
       <label className="block text-sm">
