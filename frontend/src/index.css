@@ -29,7 +29,7 @@ code {
   @apply bg-gray-800/50 text-emerald-400 px-1.5 py-0.5 rounded;
 }
 
-/* React Flow Customizations */
+
 .react-flow {
   @apply bg-gradient-to-br from-gray-900/80 to-gray-950/90;
 }
@@ -72,8 +72,6 @@ code {
 .react-flow__controls-button svg {
   @apply fill-gray-300;
 }
-
-
 
 .react-flow__panel {
   @apply bg-gray-900/80 text-gray-300 border border-gray-700 rounded-lg shadow;

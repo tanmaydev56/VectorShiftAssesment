@@ -129,9 +129,8 @@ export const PipelineUI = () => {
             variant="dots"
           />
         <Controls
-className="bg-gray-900/80 backdrop-blur-sm border border-gray-700 rounded-xl shadow-lg shadow-blue-900/10 hover:shadow-blue-900/20 transition-all p-1"
+        className="bg-gray-900/80 backdrop-blur-sm border border-gray-700 rounded-xl shadow-lg shadow-blue-900/10 hover:shadow-blue-900/20 transition-all p-1"
   position="top-right"
-
 />
           <MiniMap 
             className="bg-gray-800/80 border border-gray-700 rounded-lg shadow-lg"

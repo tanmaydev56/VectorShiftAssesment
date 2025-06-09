@@ -26,7 +26,8 @@ const APICallNode = ({ id, data }) => {
               type="text"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              className="w-full bg-gray-800/70 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all group-hover:border-gray-600"
+              className="w-full bg-gray-800/70 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none 
+              focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all group-hover:border-gray-600"
             />
             <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
               <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -43,7 +44,8 @@ const APICallNode = ({ id, data }) => {
               <button
                 key={m}
                 onClick={() => setMethod(m)}
-                className={`${methodColors[m]} ${method === m ? 'ring-2 ring-offset-2 ring-offset-gray-900 ring-blue-400' : ''} border rounded-lg py-1.5 text-xs font-medium transition-all hover:brightness-110`}
+                className={`${methodColors[m]} ${method === m ? 'ring-2 ring-offset-2 ring-offset-gray-900 ring-blue-400' : ''} border
+                 rounded-lg py-1.5 text-xs font-medium transition-all hover:brightness-110`}
               >
                 {m}
               </button>

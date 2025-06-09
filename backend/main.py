@@ -8,10 +8,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins (replace with your frontend URL in production)
+    allow_origins=["*"],  
     allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods
-    allow_headers=["*"],  # Allows all headers
+    allow_methods=["*"],  
+    allow_headers=["*"],  
 )
 
 class Node(BaseModel):
@@ -32,6 +32,7 @@ class Pipeline(BaseModel):
     edges: List[Edge]
     
 
+# dag identification using Kahn's algorithm
 def is_dag(nodes: List[dict], edges: List[dict]) -> bool:
     graph = defaultdict(list)
     in_degree = {node['id']: 0 for node in nodes}
@@ -40,6 +41,8 @@ def is_dag(nodes: List[dict], edges: List[dict]) -> bool:
         graph[edge['source']].append(edge['target'])
         in_degree[edge['target']] += 1
     
+#    we will chck how many nodes have in-degree of 0
+    # if all nodes have in-degree of 0, then it is a DAG
     queue = [node_id for node_id in in_degree if in_degree[node_id] == 0]
     count = 0
     
